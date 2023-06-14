@@ -1,0 +1,23 @@
+{
+    "product_name":"a cool plugin for AutoCAD",
+    "product_id":5292,
+    "trial_days":3,
+    "license_days":90,
+    "plugin_guid":"e75838f0-fc90-4a28-bdc9-5e73cf75eba6",
+    "api_url":"https://nsvsoft.net/wordpress/?wc-api=serial-numbers-api",
+    "log":true,
+    "copy_files":
+    [
+        {
+            "from":"folder/background.dll",
+            "to":"$AUTOCAD_ROOT$/plugins/background.dll"
+        }
+    ],
+    "xml":
+    {
+        "target":"$AUTOCAD_ROOT$/plugins/packages.xml",
+        "fresh":"folder/m2.xml",
+        "ignore_if_contains":"1231aasdf23",
+        "to_merge":""
+    }
+}

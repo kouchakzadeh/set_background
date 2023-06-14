@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage AppVersion="2.3.1" Author="Amir" Description="NSV Package" HelpFile="./Contents/Resources/CubeHelp.html" Icon="./Contents/Resources/Cube.ico" Name="Amir Name test" ProductCode="{39CC1599-E035-4953-AD06-D7C7EC572636}" ProductType="Application" SchemaVersion="1.0" UpgradeCode="{22497B03-325F-482E-80BC-C0B479A84A23}" AutodeskProduct="AutoCAD" FriendlyVersion="2.3.1" SupportedLocales="Enu" AppNameSpace="appstore.exchange.autodesk.com" OnlineDocumentation=" ">
+  <CompanyDetails Name=" " Phone=" " Url=" " Email=" " />
+  <Components Description="2020-2024">
+    <RuntimeRequirements SupportPath="./Contents/Resource" OS="Wins32|Win64" Platform="AutoCAD" SeriesMin="R23.1" SeriesMax="R24.3" />
+    <ComponentEntry AppDescription="Insertes NSV tools to the ribbon" AppName="CubeK\CUI" ModuleName="./Contents/Resource/NSV 6-8.cuix" Version="2.3.1"></ComponentEntry>
+  </Components>
+  <Components Description="2020-2024">
+    <RuntimeRequirements OS="Win32|Win64" Platform="AutoCAD*" SeriesMin="R23.1" SeriesMax="R24.2" />
+    <ComponentEntry AppDescription="Delete Block" AppName="CubeK\CleanBlock" LoadOnAutoCADStartup="true" ModuleName="./Contents/Support/CleanBlock.dll" Version="2.3.1" />
+  </Components>
+  <Components Description="2020-2024">
+    <RuntimeRequirements OS="Win32|Win64" Platform="AutoCAD*" SeriesMin="R23.1" SeriesMax="R24.2" />
+    <ComponentEntry AppDescription="LOM" AppName="CubeK\ListOfMaterial" LoadOnAutoCADStartup="true" ModuleName="./Contents/Support/LOM.dll" Version="2.3.1" />
+  </Components>
+  <Components Description="2020-2024">
+    <RuntimeRequirements OS="Win32|Win64" Platform="AutoCAD*" SeriesMin="R23.1" SeriesMax="R24.2" />
+    <ComponentEntry AppDescription="Force Laye Change" AppName="CubeK\set background layer" LoadOnAutoCADStartup="true" ModuleName="./Contents/Support/Force Layer and color.dll" Version="2.3.1" />
+  </Components>
+  <Components Description="2020-2024">
+    <RuntimeRequirements OS="Win32|Win64" Platform="AutoCAD*" SeriesMin="R23.1" SeriesMax="R24.2" />
+    <ComponentEntry AppDescription="inserts valve blocks" AppName="CubeK\valve blocks" LoadOnAutoCADStartup="true" ModuleName="./Contents/Support/valve blocks.dll" Version="2.3.1" />
+  </Components>
+  <Components Description="2020-2024">
+    <RuntimeRequirements OS="Win32|Win64" Platform="AutoCAD*" SeriesMin="R23.1" SeriesMax="R24.2" />
+    <ComponentEntry AppDescription="inserts sprinklers heads to modelspace" AppName="CubeK\Sprinkler Blocks" LoadOnAutoCADStartup="true" ModuleName="./Contents/Support/Sprinkler blocks.dll" Version="2.3.1" />
+  </Components>
+  <Components Description="2020-2024">
+    <RuntimeRequirements OS="Win32|Win64" Platform="AutoCAD*" SeriesMin="R23.1" SeriesMax="R24.2" />
+    <ComponentEntry AppDescription="trims pipes in sprinkler blocks" AppName="CubeK\splrinkler head trim" LoadOnAutoCADStartup="true" ModuleName="./Contents/Support/Sprinkler Trim.dll" Version="2.3.1" />
+  </Components>
+  <Components Description="2020-2024">
+    <RuntimeRequirements OS="Win32|Win64" Platform="AutoCAD*" SeriesMin="R23.1" SeriesMax="R24.2" />
+    <ComponentEntry AppDescription="deletes single elements in nested blcoks" AppName="CubeK\clean nested blocks" LoadOnAutoCADStartup="true" ModuleName="./Contents/Support/edit nested blocks.dll" Version="2.3.1" />
+  </Components>
+  <Components Description="2020-2024">
+    <RuntimeRequirements OS="Win32|Win64" Platform="AutoCAD*" SeriesMin="R23.1" SeriesMax="R24.2" />
+    <ComponentEntry AppDescription="deletes a block within a nested block" AppName="CubeK\delete nested blocks" LoadOnAutoCADStartup="true" ModuleName="./Contents/Support/nested blocks.dll" Version="2.3.1" />
+  </Components>
+  <Components Description="2020-2024">
+    <RuntimeRequirements OS="Win32|Win64" Platform="AutoCAD*" SeriesMin="R23.1" SeriesMax="R24.2" />
+    <ComponentEntry AppDescription="changes hatch object transparency" AppName="CubeK\hatch transparency" LoadOnAutoCADStartup="true" ModuleName="./Contents/Support/transparent.dll" Version="2.3.1" />
+  </Components>
+</ApplicationPackage>
