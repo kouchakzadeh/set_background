@@ -23,9 +23,10 @@ namespace background
         public static void TestDialog()
         {
 
-            
-            var lchecker = LicenseChecker.checkLicense("e75838f0-fc90-4a28-bdc9-5e73cf75eba6",true,false);
-            if (!lchecker)
+
+            var lc = LicenseManager.LicenseChecker.checkLicense(
+                "f973f8f0-3087-4140-853c-215c0499b192", false, false);
+            if (!lc)
                 return;
 
             var doc = AcAp.DocumentManager.MdiActiveDocument;
@@ -201,8 +202,6 @@ namespace background
                     }
                     else if (entity is Leader)
                     {
-                        var ed = AcAp.DocumentManager.MdiActiveDocument.Editor;
-                        ed.WriteMessage("leader");
                         var leader = (Leader)entity;
                         leader.Dimclrd = Color.FromColorIndex(ColorMethod.ByLayer, 0);
                     }
@@ -212,13 +211,17 @@ namespace background
                         
                     }
 
-                    entity.Layer = layerName;
-                    entity.ColorIndex = 256;
-                    entity.LineWeight = LineWeight.ByLayer;
                     if (entity is BlockReference br)
                     {
                         SetBlockByLayer(br, layerName, processed, tr);
                     }
+                    else if(entity is Hatch hatch)
+                    {
+                        hatch.HatchObjectType = HatchObjectType.HatchObject;
+                    }
+                    entity.Layer = layerName;
+                    entity.ColorIndex = 256;
+                    entity.LineWeight = LineWeight.ByLayer;
                 }
             }
         }
