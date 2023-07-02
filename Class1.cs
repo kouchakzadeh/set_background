@@ -19,7 +19,7 @@ namespace background
 {
     public class Class1
     {
-        [CommandMethod("NSVbackground")]
+        [CommandMethod("NSVsetbackground")]
         public static void TestDialog()
         {
 
